@@ -5,17 +5,17 @@
 	"name": "SayHello",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"daydarktv"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://daysportal.com",
+		"sources": "https://github.com/DayDarkTV/SayHello"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/sayhello/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
+		"client": [
 			"com.daysportal.sayhello.SayHello"
 		]
 	},
@@ -27,8 +27,5 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }

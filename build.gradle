@@ -16,6 +16,24 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+
+	// Twitch4J
+	maven { url "https://maven.awakenedredstone.com"}
+
+	// Lodestone
+	maven {url = 'https://maven.blamejared.com/' }
+	// Modrinth
+//	maven {url = "https://api.modrinth.com/maven" }
+	// Cardinal Components API
+	maven {url = 'https://maven.ladysnake.org/releases'}
+	// Porting Lib
+	maven {url = "https://mvn.devos.one/releases/" }
+	// Reach Entity Attributes
+	maven {url = "https://maven.jamieswhiteshirt.com/libs-release"}
+	// Trinkets
+	maven {url = "https://maven.terraformersmc.com/"}
+	//
+//	maven {url = "https://maven.theillusivec4.top/"}
 }
 
 dependencies {
@@ -26,7 +44,8 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+	modImplementation "com.github.twitch4j:twitch4j-fabric:${project.twitch4j_version}"
 }
 
 processResources {
